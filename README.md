@@ -7,7 +7,7 @@
 
 > Automated **Azuro trading bot** — Decentralized protocol. Part of the [Prediction Market Toolkits](https://github.com/HarrierOnChain/Prediction-Markets-Trading-Bot-Toolkits) suite: one execution core, one risk layer, every venue.
 
-**Azuro** is on the **adapter-driven roadmap** — the engine is built; the Azuro adapter is in the queue. Trade it and want it prioritized? [Reach out](https://t.me/HarrierOnChain) and it moves up.
+**Azuro** is **live in production today.**
 
 ---
 
@@ -21,6 +21,20 @@ These bots run on Azuro through a single venue adapter on the shared engine — 
 | 📊 **Orderbook Imbalance** — the signal *is* the order book, no external feeds |
 
 > Want a strategy not listed here on Azuro? Adapter coverage is demand-driven — [ask](https://t.me/HarrierOnChain).
+
+---
+
+## Quickstart
+
+Clone, drop in your keys, and run — the TUI lets you pick a strategy.
+
+```bash
+git clone https://github.com/HarrierOnChain/Azuro.git
+cd Azuro
+cp config.example.yaml config.yaml   # add your keys
+cargo run --release                  # launch the TUI
+# headless: cargo run --release -- run copy-trading
+```
 
 ---
 
